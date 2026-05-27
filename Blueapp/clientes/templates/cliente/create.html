@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class="container mt-4">
+
+    <h2>Nuevo Cliente</h2>
+
+    <form method="POST">
+
+        <div class="mb-3">
+
+            <label>Nombre</label>
+
+            <input type="text"
+                   name="nombre"
+                   class="form-control">
+
+        </div>
+
+        <div class="mb-3">
+
+            <label>Telefono</label>
+
+            <input type="text"
+                   name="telefono"
+                   class="form-control">
+
+        </div>
+
+        <button class="btn btn-dark">
+            Guardar
+        </button>
+
+    </form>
+
+</div>
+
+{% endblock %}

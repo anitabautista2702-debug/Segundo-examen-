@@ -1,0 +1,86 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class="container mt-5">
+
+    <div class="text-center mb-5">
+        <h1 class="fw-bold">Sistema TechBol</h1>
+        <p class="text-secondary">
+            Gestión de Clientes, Productos y Pedidos
+        </p>
+    </div>
+
+    <div class="row">
+
+        <!-- CLIENTES -->
+        <div class="col-md-4 mb-4">
+            <div class="card shadow h-100 border-0">
+                <div class="card-body text-center">
+
+                    <h3 class="card-title">
+                        Clientes
+                    </h3>
+
+                    <p class="card-text">
+                        Administración de clientes registrados.
+                    </p>
+
+                    <a href="{{ url_for('bp_cliente.index') }}"
+                       class="btn btn-dark">
+                        Ver Clientes
+                    </a>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- PRODUCTOS -->
+        <div class="col-md-4 mb-4">
+            <div class="card shadow h-100 border-0">
+                <div class="card-body text-center">
+
+                    <h3 class="card-title">
+                        Productos
+                    </h3>
+
+                    <p class="card-text">
+                        Gestión de productos e inventario.
+                    </p>
+
+                    <a href="{{ url_for('bp_producto.index') }}"
+                       class="btn btn-dark">
+                        Ver Productos
+                    </a>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- PEDIDOS -->
+        <div class="col-md-4 mb-4">
+            <div class="card shadow h-100 border-0">
+                <div class="card-body text-center">
+
+                    <h3 class="card-title">
+                        Pedidos
+                    </h3>
+
+                    <p class="card-text">
+                        Control y seguimiento de pedidos.
+                    </p>
+
+                    <a href="{{ url_for('bp_pedido.index') }}"
+                       class="btn btn-dark">
+                        Ver Pedidos
+                    </a>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+{% endblock %}
