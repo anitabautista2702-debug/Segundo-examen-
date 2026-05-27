@@ -76,3 +76,5 @@ def delete(id):
     db.session.commit()
 
     return redirect('/pedidos/')
+
+
