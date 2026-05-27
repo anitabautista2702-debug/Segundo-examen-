@@ -50,3 +50,10 @@ def downgrade():
     op.drop_table('productos')
     op.drop_table('clientes')
     # ### end Alembic commands ###
+
+
+
+
+
+
+
